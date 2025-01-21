@@ -114,15 +114,18 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  flex-basis: fit-content;
   width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
+  
 }
 
 .content__video-card-description-container {
   flex-grow: 1;
   overflow: hidden;
+
 }
 
 .search-form__fieldset-title {
@@ -196,9 +199,15 @@ ol {
   display: flex;
   width: fit-content;
   align-items: center;
-  padding-top: 2px;
-  padding-bottom: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
 }
+
+.search-form__label:has(.search-form__label-text) {
+  cursor: pointer;
+}
+
+
 
 .search-form__label:has(.search-form__textfield) {
   border-bottom: 1px solid #fff;
@@ -261,7 +270,7 @@ ol {
   min-width: 194px;
   text-align: center;
   align-self: flex-end;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .more-button {
